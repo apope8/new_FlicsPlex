@@ -26,3 +26,4 @@ Things you may want to cover:
 * 
 
 *
+* Test Eithne commit and push and pull request
