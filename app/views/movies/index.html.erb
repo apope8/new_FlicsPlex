@@ -9,10 +9,12 @@
             <div class="title">
               <h4><%= movie.title %> <span>(<%= movie.release_year %>)</span></h4>
             </div>
-            <p class="left price label movie-label radius">$ <%= movie.price %>
+            <p class="left price label movie-label radius"> $<%= movie.price %>
             <%= button_to 'Add to Cart', line_items_path(movie_id: movie),
               remote: true %>
-              </p>
+             
+            </p>
+            <br>
           </div>
         </div>
       </li>

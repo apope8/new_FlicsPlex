@@ -13,28 +13,41 @@
 </head>
 
 
-<body>   
-<header class="main">
-<%= image_tag 'FlicsPlex_logo_Medium.png', alt: 'FlicsPlex Movie Catalog' %> 
-
-<h1><%= @page_title %></h1>
-
-</header>
-
-<section class="content">     
-<nav class="side_nav">        
-  <ul>          
-  	<li><a href="/">Home</a></li>         
-  	
-  	<li><a href="/some">some</a></li>          
-  	<li><a href="/nthing">nice</a></li>         
-  	<li><a href="/nice">nice</a></li>        
-  </ul>     
-</nav>                       
-
+  <body>   
+    <header class="main">
+    <%= image_tag 'FlicsPlex_logo_Medium.png', alt: 'FlicsPlex Movie Catalog' %> 
+    
+    <h1><%= @page_title %></h1>
+    
+    </header>
+    
+    <section class="content">     
+      <nav class="side_nav">        
+        <ul>          
+        	
+          <li><%= link_to "Home", root_path %>Home</a></li>
+          <li><%= link_to "Movies",movies_path %></li>
+         
+           
+          <!--<ul class="right">-->
+      
+            <%if signed_in?%>
+              <li><%=link_to current_user.email, edit_user_registration_path%></li>
+              <li><%=link_to "Logout", destroy_user_session_path, method: :delete%></li>
+            <%else%>
+              <li><%=link_to "Register", new_user_registration_path%></li>
+              <li><%=link_to "Login", new_user_session_path%></li>
+            <%end%>
+            
+        <!--</ul> -->
+        <li><%= link_to "Shopping Cart",carts_path %></li>
+        <li><%= link_to "Movie Categories",root_path %></li>
+        <li><%= link_to "About",root_path %></li>
+      </nav>                       
+    
       <main class='<%= controller.controller_name %>'>        
-  <%= yield %>     
-  </main>    
-  </section>  
+        <%= yield %>     
+      </main>    
+    </section>  
   </body>
 </html>

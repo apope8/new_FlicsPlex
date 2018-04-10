@@ -3,18 +3,18 @@
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="mb1"><%= f.email_field :email, autofocus: true, placeholder: "Email", class: "radius" %></div>
-
+  
     <div class="mb1"><%= f.password_field :password, autocomplete: "off", placeholder: "Password", class: "radius" %></div>
-
-    <% if devise_mapping.rememberable? -%>
+    
+     <% if devise_mapping.rememberable? -%>
       <div class="switch round small mb1">
-        <div class="inline-block left prm"><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-        <span>Remember me</span>
+        <div ><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+       
       </div>
     <% end -%>
-
-    <div class="clear"><%= f.submit "Let me in", class: "button" %></div>
+   
+    <div class="clear"><%= f.submit "Log In", class: "button" %></div>
   <% end %>
-
+  <br>
   <%= render "devise/shared/links" %>
 </div>
