@@ -1,0 +1,176 @@
+[33mcommit 632226142a3fab9f947d7bea285c14dccd5fa618[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Merge: 14a1c16 5e01119
+Author: kennbyrne <ken@kenbyrne.com>
+Date:   Mon Apr 9 16:42:12 2018 +0000
+
+    Committing changes of  merge
+
+[33mcommit 14a1c161b73fb73e728705fe98d6739a453374aa[m
+Author: kennbyrne <ken@kenbyrne.com>
+Date:   Mon Apr 9 16:24:05 2018 +0000
+
+    Committing changes before merge
+
+[33mcommit 5e011194dc3203218a4cd303b5450a18dbf9cad5[m
+Merge: edd9277 4efc37c
+Author: eosgith <36235085+eosgith@users.noreply.github.com>
+Date:   Mon Apr 9 15:41:50 2018 +0100
+
+    Merge pull request #5 from kennbyrne/EOBR2MoviesPg
+    
+    Update Movies page to successfully show movie images
+
+[33mcommit 4efc37caa7791af8cacdba6df51047097c635e16[m[33m ([m[1;31morigin/EOBR2MoviesPg[m[33m)[m
+Author: eosgith <eithneosull@eircom.net>
+Date:   Mon Apr 9 14:36:10 2018 +0000
+
+    Update Movies page to successfully show movie images
+
+[33mcommit edd92777bd6399f6a98a709ff0169c2a695d1960[m
+Author: eosgith <eithneosull@eircom.net>
+Date:   Mon Apr 9 12:59:23 2018 +0000
+
+    Add movie image to assets/images -rm2186479460
+
+[33mcommit 52eff70eef3e4f695fe1d5c3b89b7659f9a79ad0[m
+Merge: a634e4b f49da65
+Author: eosgith <36235085+eosgith@users.noreply.github.com>
+Date:   Mon Apr 9 13:17:32 2018 +0100
+
+    Merge pull request #4 from kennbyrne/EO_Test_commit_push
+    
+    Test EO commit push pull-req
+
+[33mcommit f49da65bb0f619694f425aecc177ba2bbf02949f[m
+Author: eosgith <eithneosull@eircom.net>
+Date:   Mon Apr 9 11:59:37 2018 +0000
+
+    Test EO commit push pull-req
+
+[33mcommit a634e4bb8639f009fe3509341d5fa0c30590d709[m
+Author: kennbyrne <ken@kenbyrne.com>
+Date:   Thu Apr 5 10:17:39 2018 +0000
+
+    <added large image on movies to get it to git >
+
+[33mcommit 51861e9b5403ec1ce4cbd7ea11e168ca7a3215c1[m
+Author: kennbyrne <ken@kenbyrne.com>
+Date:   Thu Apr 5 01:22:28 2018 +0000
+
+    <sorted issues with movie to cart -Cart has many line items-Movie has many line items.>
+
+[33mcommit 32477beec9430b2099a75eac7c87cea1424d9a1f[m
+Author: kennbyrne <ken@kenbyrne.com>
+Date:   Wed Apr 4 23:32:57 2018 +0000
+
+    <lot of errors corrected, pretty blank page now fires, will look at layout/app.html to assign pages rather htna the bland there at moment >
+
+[33mcommit 5b718730793000859cf1c6852a6b16d92f6066ad[m
+Author: kennbyrne <ken@kenbyrne.com>
+Date:   Wed Apr 4 17:51:45 2018 +0000
+
+    <route and gemfile changes >
+
+[33mcommit 2716b21492b4188e2b64ddc8f5ca70fe20fc4c0a[m
+Author: kennbyrne <ken@kenbyrne.com>
+Date:   Wed Apr 4 15:35:53 2018 +0000
+
+    <issue 1 solution 2 did not work, checking inconsistency between controller and views >
+
+[33mcommit fc2db01e589828a214bf1f26e8c1638f74b4803e[m
+Merge: 215a4cb 6aecae5
+Author: kennbyrne <ken@kenbyrne.com>
+Date:   Wed Apr 4 15:22:48 2018 +0000
+
+    Merge branch 'master' of https://github.com/kennbyrne/new_FlicsPlex
+
+[33mcommit 215a4cb5c687a88ca0c26ce9fcb66e9190b639db[m
+Author: kennbyrne <ken@kenbyrne.com>
+Date:   Wed Apr 4 15:22:02 2018 +0000
+
+    <issue 1 solution 2 did not work, checking inconsistency between controller and views >
+
+[33mcommit 6aecae57dbbe13f3da9db2e7f5424591b25a7e11[m
+Author: kennbyrne <ken@kenbyrne.com>
+Date:   Wed Apr 4 02:30:47 2018 +0100
+
+    issues resolved, errors only in test controller
+
+[33mcommit 4c25416c6a6463575d7a3366c6ad9f6ff3264c44[m
+Author: kennbyrne <ken@kenbyrne.com>
+Date:   Tue Apr 3 23:05:35 2018 +0000
+
+    <views/store/index.html.erb:10:issue to resolve- removed foundation but cart issue now >
+
+[33mcommit 8ce6e7cdec3c8fe26ca560fd09fb65acf895af07[m
+Author: kennbyrne <ken@kenbyrne.com>
+Date:   Tue Apr 3 19:06:53 2018 +0000
+
+    <errors only in test files now. Removed application css file to redo>
+
+[33mcommit b72dd7d826afce6d7ce19dff5beb7bfbd0d9b206[m
+Author: kennbyrne <ken@kenbyrne.com>
+Date:   Mon Apr 2 19:38:24 2018 +0000
+
+    <22 errors for ken to fix ;-) >
+
+[33mcommit 3b806a39456369586a3d85c0809f470dbd1d793a[m
+Merge: 89ce0c3 e6c1c02
+Author: kennbyrne <ken@kenbyrne.com>
+Date:   Mon Apr 2 19:00:16 2018 +0000
+
+    <have a scope issue in movie model afs=ecting store controller to fixn>
+
+[33mcommit 89ce0c318e48319f8ec95826a0176bd88d89709f[m
+Author: kennbyrne <ken@kenbyrne.com>
+Date:   Mon Apr 2 18:58:49 2018 +0000
+
+    <have a scope issue in movie model afs=ecting store controller to fixn>
+
+[33mcommit e6c1c02c1fec53529d9dd8bede42d4bbe5b591c9[m
+Merge: c3ac3cf d546fb4
+Author: apope8 <apope8@gmail.com>
+Date:   Mon Apr 2 19:21:58 2018 +0100
+
+    Merge pull request #2 from apope8/master
+    
+    fix default scope error
+
+[33mcommit d546fb41253938f967db094497e3f46ef574e871[m
+Author: apope8 <apope8@gamil.com>
+Date:   Mon Apr 2 18:20:59 2018 +0000
+
+    fix default scope error
+
+[33mcommit c3ac3cf674c3b5cbfdb560471142d33afe9a9561[m
+Merge: 5862264 d88498b
+Author: apope8 <apope8@gmail.com>
+Date:   Mon Apr 2 18:52:49 2018 +0100
+
+    Merge pull request #1 from apope8/master
+    
+    Aaron Test Commit
+
+[33mcommit d88498bb9644341ae5e6389dd9358268a93e0351[m
+Author: apope8 <apope8@gamil.com>
+Date:   Mon Apr 2 17:49:53 2018 +0000
+
+    Aaron Test Commit
+
+[33mcommit 58622648947b489753c6a1c82c98120e99a0bc5c[m
+Author: kennbyrne <ken@kenbyrne.com>
+Date:   Sun Apr 1 23:56:51 2018 +0000
+
+    <cart added, via line item to return to. Buttons to be createdn>
+
+[33mcommit 2843f0cb6b9e5f61c5c6488493039ace3e0548dd[m
+Author: kennbyrne <ken@kenbyrne.com>
+Date:   Sun Apr 1 19:05:38 2018 +0000
+
+    <login and reg form, and rails assets for jquery and foundation>
+
+[33mcommit 5f389887acb84cfba4acb7ffbce36aff47f5d1f7[m
+Author: kennbyrne <ken@kenbyrne.com>
+Date:   Sun Apr 1 17:43:11 2018 +0000
+
+    <routes to be redone and delete origional scaffold and do newe>
