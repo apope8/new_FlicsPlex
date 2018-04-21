@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   
  
+  resources :genres
+  resources :categories
   root 'store#index'
   resources :line_items
   resources :carts
