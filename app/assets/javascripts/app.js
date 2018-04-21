@@ -42,4 +42,4 @@
 
 	});
 
-})(jQuery, document, window);
+});

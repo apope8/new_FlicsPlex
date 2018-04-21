@@ -17,9 +17,10 @@
  * //= require_self
  */
 
-    @import "bootstrap-sprockets";
-    @import 'style';
-    //@import 'tryout';
+    @import "bootstrap-sprockets";  
+    @import "bootstrap";
+    @import "style";
+    @import "tryout";
 
    
 /*=========================================== 

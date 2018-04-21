@@ -1,7 +1,19 @@
+/**{*/
+/*  --primary-color: #81d4fa;*/
+/*  --light-color: #b6ffff;*/
+/*  --dark-color: #4ba3c7;*/
+/*}*/
+
 * {
     box-sizing: border-box;
 }
- 
+
+
+/*p,ul{*/
+/*	font-size:13px;*/
+
+/*}*/
+
 .menuH4, .menuH3{
 	color: #4ba3c7; 
 	text-align:center;
@@ -32,7 +44,7 @@
 }
 
 #menuRow{
-	border: 1px solid #81d4fa;
+	border: 1px solid #ff9900;
 	border-radius:5px;
 }
 .row{
@@ -82,28 +94,28 @@ h3.featureTitle {
 	margin-left:auto;
 	margin-right:auto;
 	border-radius: 5%;
-  	-webkit-box-shadow: 0px 5px 5px #b6ffff; 
+  	-webkit-box-shadow: 0px 5px 5px rgb(255, 153, 0); 
 	-moz-box-shadow: 0 3px 10px #666;
 }
 
 .featureButton {
    
   text-align: center;
-	border: 0.5px solid  #4ba3c7;
+	border: 0.5px solid  #ff9900;
 	border-radius: 10px;
   	padding: 10px;
  	color: white;
 	max-width:100px;
 	margin:auto;
 	margin-top:15px;
-	background-color: #81d4fa;
+	background-color: #ff9933;
 	font-size:1rem;
 }
 
 .featureButton:hover {
 	/* Highlight what the user is hovering over */
 	color:white;
-    background-color:  #4ba3c7;
+    background-color:  #ffa31a;
     text-decoration: none;
 }
 

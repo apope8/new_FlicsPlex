@@ -1,44 +1,30 @@
 <h2 class="menuH3">Featured Movies</h2>
-<div id="main-content">
-    <div class="container">
+<div id="main">
    <div class="row">
 	    <% @movies.each do |movie| %>
 	    
-       	<div class="movie-list">	
-       	<div class="movie">
-       	    <figure class="movie-poster"><%= link_to (image_tag movie.image_url, :class=>"colPict"), movie %></figure>
-        <div class= "movie-title"><%= movie.title %> </div>
- 
-            <li>(<%= movie.release_year %>)</li>
-          
-            <li>$<%= movie.price %></li>
-            <li> <%= button_to 'Add to Cart', line_items_path(movie_id: movie), :class=>"button",
+       	<div class="col-3" >	
+        <%= link_to (image_tag movie.image_url, :class=>"colPict"), movie %>
+          <br>
+          <ul class= "bmarg">
+            <li class= "bmarg"><h4><%= movie.title %> </h4></li>
+            <li class= "bmarg">(<%= movie.release_year %>)</li>
+            <br>
+            <li class= "bmarg"></li>
+            <li class= "bmarg">$<%= movie.price %></li>
+            < 
               remote: true %></li>
-         
-          
-                    <% if user_signed_in? %>
-                <a href="/cart/<%= item.id %>" class="button">Add to Cart</a>  
-          
-          <% end %>
- 
-          
-           <% if session[:login] == 1 %>
-        
-        <%= link_to 'Edit', edit_item_path(item), :class =>"button", :role=>"button"  %>
-        <%= link_to 'Delete', item, method: :delete, data: { confirm: 'Are you sure?' }, :class =>"button", :role=>"button"  %>
-     
-        <% end %>
-             <%= link_to 'Edit', edit_item_path(item), :class =>"button", :role=>"button"  %>
-        <%= link_to 'Delete', item, method: :delete, data: { confirm: 'Are you sure?' }, :class =>"button", :role=>"button"  %>
-        
-        
-        <td><%= link_to 'Show', movie %></td>
-        <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
-        <td><%= link_to 'Destroy', movie, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-   
-     </div>
-    <% end %>
-      </div>
+          </ul>
+             <div>
+                 <% if user_signed_in? %>
+                  <li class= "bmarg"> <%= button_to 'Add to Cart', line_items_path(movie_id: movie), :class=>"featureButton",  
+                
+            <% end %>
+    
+            </div>
+       <br>
+  <%= link_to 'New Movie',  new_movie_path %>
+
   
   </div>
 </div>
