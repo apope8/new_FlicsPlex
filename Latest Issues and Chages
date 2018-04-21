@@ -1,0 +1,18 @@
+In quest to continue, i managed to bugger up store index and movie index pages with the add button -ifuserlogged in erb -looking at wortng path
+css issues gettting resolved just need to take action on movies page
+menu bar is screwed  andonl #ystore andcart working as the links and routes connected area mess
+
+
+There are 4 staticpages called pages@about, contact,home, andhelp that showthetrue css template but  cannotbe accessedby the route.rb mess
+
+work to doas welll as above
+
+recheck
+ordersand redo
+look atusers
+paginate movies page
+paginateorders page
+
+set up credit card details with active merchant
+
+setup email to send on the youtube link url from db in order 
