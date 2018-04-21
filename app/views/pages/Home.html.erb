@@ -21,43 +21,17 @@
 		<script src="javascripts/ie-support/respond.js"></script>
 		<![endif]-->
 
-	</head>
-
-
-	<body>
-		
-		<div id="site-content">
-		 
-		 <%= render :partial => "layouts/header" %>
-
-			<main class="main-content">
-				<div class="container">
-					<div class="breadcrumbs">
-							<nav class="breadcrumbs">
-								<a class="breadcrumb-item"><%= link_to "Home", home_path %></a>
-								<a class="breadcrumb-item"><%= link_to "Store", root_path %></a>
-								<a class="breadcrumb-item"><%= link_to "Movies", movies_path %></a>
-								<a class="breadcrumb-item"><%= link_to 'About', about_path %></a>
-								<a class="breadcrumb-item"><%= link_to 'Contact', contact_path %></a>
-								<a class="breadcrumb-item"><%= link_to 'Help', help_path %></a>
-								<a class="breadcrumb-item"><%= link_to "Shopping Cart", carts_path %></a>
- 
-								<p></p>
-							<span>Contact</span>
-						</div>
-
-					<div class="mobile-navigation"></div>
-				</div>
-			</header>
+ <%= render :partial => "layouts/header" %> 
 			<main class="main-content">
 				<div class="container">
 					<div class="page">
 						<div class="row">
 							<div class="col-md-9">
-								<div id="carouselControls" class="carousel slide" data-ride="carousel">
-									<div class="carousel-inner">
-										<div class="carousel-item active">
-											<a href="#"><%= image_tag("Site/slide-2.jpg", alt: "Slide 2", :class => "first slide") %></a> 
+								<div class="slider">
+									<ul class="slides">
+											<a href="#"><%= image_tag("Site/slide-1.jpg", alt: "Slide 1", :class => "first slide") %></a> 
+											<a href="#"><%= image_tag("Site/slide-2.jpg", alt: "Slide 2", :class => "first slide") %></a>
+											<a href="#"><%= image_tag("Site/slide-3.jpg", alt: "Slide 3", :class => "first slide") %></a>
 										</div>
 									</div>
 								</div>

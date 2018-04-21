@@ -16,10 +16,9 @@
               remote: true %></li>
           </ul>
              <div>
-                 <% if user_signed_in? %>
-                  <li class= "bmarg"> <%= button_to 'Add to Cart', line_items_path(movie_id: movie), :class=>"featureButton",  
-                
-            <% end %>
+   
+                   <li class= "bmarg"> <%= button_to 'Add to Cart', line_items_path(movie_id: movie), :class=>"featureButton",
+              remote: true %></li>
     
             </div>
        <br>
@@ -27,4 +26,5 @@
 
   
   </div>
+ <% end %>
 </div>
