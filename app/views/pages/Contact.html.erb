@@ -1,0 +1,131 @@
+<% provide(:title, "Contact") %>
+<% content_for :page_title, 'Contact' %>
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>FlicsPlex | Contact</title>
+
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="application">
+		
+		<!--[if lt IE 9]>
+		<script src="javascripts/ie-support/html5.js"></script>
+		<script src="javascripts/ie-support/respond.js"></script>
+		<![endif]-->
+
+	</head>
+
+
+	<body>
+		
+
+		<div id="site-content">
+			
+			 <%= render :partial => "layouts/header" %> 
+			 
+			<main class="main-content">
+				<div class="container">
+					<div class="breadcrumbs">
+							<nav class="breadcrumbs">
+								<a class="breadcrumb-item"><%= link_to "Home", home_path %></a>
+								<a class="breadcrumb-item"><%= link_to "Store", root_path %></a>
+								<a class="breadcrumb-item"><%= link_to "Movies", movies_path %></a>
+								<a class="breadcrumb-item"><%= link_to 'About', about_path %></a>
+								<a class="breadcrumb-item"><%= link_to 'Contact', contact_path %></a>
+								<a class="breadcrumb-item"><%= link_to 'Help', help_path %></a>
+								<a class="breadcrumb-item"><%= link_to "Shopping Cart", carts_path %></a>
+ 
+								<p></p>
+							<span>Contact</span>
+						</div>
+
+						<div class="content">
+							<div class="row">
+								<div class="col-md-4">
+									<h2>Contact</h2>
+									<ul class="contact-detail">
+										<li>
+											<a href="#"><%= image_tag("icon-contact-map.png", alt: "Contact", :class => "Contact") %></a>
+											<address><span>FlicsPlex Inc</span> <br>550 Avenue Street, New york</address>
+										</li>
+										<li>
+											<a href="#"><%= image_tag("icon-contact-phone.png", alt: "Contact", :class => "Contact") %></a>
+											<a href="tel:1590912831">+1 590 912 831</a>
+										</li>
+										<li>
+											<a href="#"><%= image_tag("icon-contact-message.png", alt: "Contact", :class => "Contact") %></a>
+											<a href="mailto:contact@FlicsPlex.com">contact@FlicsPlex.com</a>
+										</li>
+									</ul>
+									<div class="contact-form">
+										<form class="form-style-7">
+										<ul>
+										<li>
+										    <label for="name">Name</label>
+										    <input type="text" name="name" maxlength="100">
+										    <span>Enter your full name here</span>
+										</li>
+										<li>
+										    <label for="email">Email</label>
+										    <input type="email" name="email" maxlength="100">
+										    <span>Enter a valid email address</span>
+										</li>
+										<li>
+										    <label for="url">Website</label>
+										    <input type="url" name="url" maxlength="100">
+										    <span>Your website address (eg: http://www.google.com)</span>
+										</li>
+										<li>
+										    <label for="bio">About You</label>
+										    <textarea name="bio" onkeyup="adjust_textarea(this)"></textarea>
+										    <span>Say something about yourself</span>
+										</li>
+										<li>
+										    <input type="submit" value="Send This" >
+										</li>
+										</ul>
+										</form>
+
+									</div>
+								</div>
+								<div class="col-md-7 col-md-offset-1">
+									<div class="map"></div>
+									
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- .container -->
+			</main>
+
+			<%= render :partial => "layouts/footer" %> 
+
+		</div>
+		<!-- Default snippet for navigation -->
+		
+			<script type="text/javascript">
+			 
+			function adjust_textarea(h) {
+			    h.style.height = "20px";
+			    h.style.height = (h.scrollHeight)+"px";
+			}
+			</script>
+
+		<script src="javascripts/jquery-1.11.1.min.js"></script>
+		<script src="javascripts/plugins.js"></script>
+		<script src="javascripts/application.js"></script>
+		<script src="javascripts/app.js"></script>
+	</body>
+
+</html>

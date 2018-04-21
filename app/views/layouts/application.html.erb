@@ -1,58 +1,46 @@
 <!DOCTYPE html>
-<html>
-<head>  
-<title>FlicsPlex</title>
-<%= csrf_meta_tags %>
-
-
-<%= stylesheet_link_tag 'application', media: 'all',                            
-                  'data-turbolinks-track': 'reload' %>  
-<%= javascript_include_tag 'application',                               
-                  'data-turbolinks-track': 'reload' %> 
-                  
-</head>
-
-
-<<<<<<< Updated upstream
-  <body> 
-  <p>test</p>
-    <header class="main">
-    <%= image_tag 'FlicsPlex_logo_Medium.png', alt: 'FlicsPlex Movie Catalog' %> 
-    
-    <h1><%= @page_title %></h1>
-    
-    </header>
-    
-    <section class="content">     
-      <nav class="side_nav">        
-        <ul>          
-        	
-          <li><%= link_to "Home", root_path %>Home</a></li>
-          <li><%= link_to "Movies",movies_path %></li>
-         
-           
-          <!--<ul class="right">-->
-      
-            <%if signed_in?%>
-              <li><%=link_to current_user.email, edit_user_registration_path%></li>
-              <li><%=link_to "Logout", destroy_user_session_path, method: :delete%></li>
-            <%else%>
-              <li><%=link_to "Register", new_user_registration_path%></li>
-              <li><%=link_to "Login", new_user_session_path%></li>
-            <%end%>
-            
-        <!--</ul> -->
-        <li><%= link_to "Shopping Cart",carts_path %></li>
-        <li><%= link_to "Movie Categories",root_path %></li>
-        <li><%= link_to "About",root_path %></li>
-      </nav>                       
-    
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title><%= yield(:title) %> | FlicsPlex</title>
+    <%= csrf_meta_tags %>
  
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+		
+		<!--[if lt IE 9]>
+		<script src="javascripts/ie-support/html5.js"></script>
+		<script src="javascripts/ie-support/respond.js"></script>
+		<![endif]-->
+
+	</head>
+
+
+	<body>
+		
+
+		<div id="site-content">
+    
+    <%= render :partial => "layouts/header" %> 
+				
+    <div class="container">
+    <%= yield %>
+    </div>
+ 
+       
       <main class='<%= controller.controller_name %>'>        
         <%= yield %>     
       </main>    
-    </section>  
-    <%= render 'layouts/footer' %>
-
+    </section> 
+    <div>
+        <div class="container">
+        <%= render 'layouts/footer' %>
+	</div>
   </body>
 </html>

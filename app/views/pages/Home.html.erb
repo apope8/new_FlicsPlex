@@ -1,0 +1,188 @@
+<% provide(:title, "Home") %>
+<% content_for :page_title, 'Home' %>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>FlicsPlex | Contact</title>
+
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="application">
+		
+		<!--[if lt IE 9]>
+		<script src="javascripts/ie-support/html5.js"></script>
+		<script src="javascripts/ie-support/respond.js"></script>
+		<![endif]-->
+
+	</head>
+
+
+	<body>
+		
+		<div id="site-content">
+		 
+		 <%= render :partial => "layouts/header" %>
+
+			<main class="main-content">
+				<div class="container">
+					<div class="breadcrumbs">
+							<nav class="breadcrumbs">
+								<a class="breadcrumb-item"><%= link_to "Home", home_path %></a>
+								<a class="breadcrumb-item"><%= link_to "Store", root_path %></a>
+								<a class="breadcrumb-item"><%= link_to "Movies", movies_path %></a>
+								<a class="breadcrumb-item"><%= link_to 'About', about_path %></a>
+								<a class="breadcrumb-item"><%= link_to 'Contact', contact_path %></a>
+								<a class="breadcrumb-item"><%= link_to 'Help', help_path %></a>
+								<a class="breadcrumb-item"><%= link_to "Shopping Cart", carts_path %></a>
+ 
+								<p></p>
+							<span>Contact</span>
+						</div>
+
+					<div class="mobile-navigation"></div>
+				</div>
+			</header>
+			<main class="main-content">
+				<div class="container">
+					<div class="page">
+						<div class="row">
+							<div class="col-md-9">
+								<div id="carouselControls" class="carousel slide" data-ride="carousel">
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<a href="#"><%= image_tag("Site/slide-2.jpg", alt: "Slide 2", :class => "first slide") %></a> 
+										</div>
+									</div>
+								</div>
+				
+							</div>
+							<div class="col-md-3">
+								<div class="row">
+									<div class="col-sm-6 col-md-12">
+										<div class="latest-movie">
+											<a href="#"><%= image_tag("Site/thumb-1.jpg", alt: "Movie 1", :class => "img_preview") %></a>
+											
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-12">
+										<div class="latest-movie">
+											<a href="#"><%= image_tag("Site/thumb-2.jpg", alt: "Movie 2", :class => "img_preview") %></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> <!-- .row -->
+						<div class="row">
+							<div class="col-sm-6 col-md-3">
+								<div class="latest-movie">
+									<a href="#"><%= image_tag("rm3213449472.jpg", alt: "Movie 1", :class => "movie_poster") %></a>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="latest-movie">
+									<a href="#"><%= image_tag("rm385270528.jpg", alt: "Movie 2", :class => "movie_poster") %></a>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="latest-movie">
+									<a href="#"><%= image_tag("rm10105600.jpg", alt: "Movie 3", :class => "movie_poster") %></a>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="latest-movie">
+									<a href="#"><%= image_tag("rm2186479360.jpg", alt: "Movie 4", :class => "movie_poster") %></a>
+								</div>
+							</div>
+						</div> <!-- .row -->
+						
+						<div class="row">
+							<div class="col-md-4">
+								<h2 class="section-title">June premiere</h2>
+								<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+								<ul class="movie-schedule">
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+								</ul> <!-- .movie-schedule -->
+							</div>
+							<div class="col-md-4">
+								<h2 class="section-title">July premiere</h2>
+								<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+								<ul class="movie-schedule">
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+								</ul> <!-- .movie-schedule -->
+							</div>
+							<div class="col-md-4">
+								<h2 class="section-title">August premiere</h2>
+								<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+								<ul class="movie-schedule">
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+								</ul> <!-- .movie-schedule -->
+							</div>
+						</div>
+					</div>
+				</div> <!-- .container -->
+			</main>
+			
+				<%= render :partial => "layouts/footer" %> 
+
+			</div>
+
+		<script src="javascripts/jquery-1.11.1.min.js"></script>
+		<script src="javascripts/plugins.js"></script>
+		<script src="javascripts/application.js"></script>
+		<script src="javascripts/app.js"></script>
+		
+	</body>
+
+</html>

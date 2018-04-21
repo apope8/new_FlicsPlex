@@ -1,0 +1,160 @@
+<div class="container">
+					<div class="page">
+						<div class="breadcrumbs">
+							<a href="index.html">Home</a>
+							<span>Movie Review</span>
+						</div>
+  
+</div>
+
+<div class="movie-list">
+							<div class="latest-movie">
+								<figure class="movie-poster"><a href="#"><%=image_tag @movie.image_url%></a></figure>
+								  <div class= "movie-title"><a href="#"><%= @movie.title %></a></div>
+								  <div class= "date"><a href="#"><%= @movie.release_year %> </a></div>
+								  <p class="label movie-label radius mb1">$ <%= @movie.price %></p>
+								  <div class= "movie-Description"><a href="#"><%= @movie.description %></a></div>
+							</div>
+   
+                  <p class="label movie-label radius mb1">$ <%= @movie.price %></p>
+                
+                <ul class= "bmarg"> <%= button_to 'Add to Cart', line_items_path(movie_id: movie), :class=>"featureButton",
+              remote: true %></li>
+                </ul>
+           <%=link_to @movie.imdb do%>
+          <%=image_tag asset_path("imdb_logo.png")%>
+          <%end%>
+   
+				<ul class= "bmarg">
+            <li class= "bmarg"><h4><%= movie.title %> </h4></li>
+            <li class= "bmarg">(<%= movie.release_year %>)</li>
+            <br>
+            <li class= "bmarg"></li>
+            <li class= "bmarg">$<%= movie.price %></li>
+            <button type="button"> <%= button_to 'Add to Cart', line_items_path(movie_id: movie), :class=>"featureButton",
+              remote: true %></li>
+          </ul>
+  
+   		 
+   		 
+   		 			<main class="main-content">
+				<div class="container">
+					<div class="page">
+						<div class="row">
+							<div class="col-md-9">
+								<div class="slider">
+									<ul class="slides">
+										<a href="#"><%= image_tag("Site/slide-1.jpg", alt: "Slide 1", :class => "1slide") %></a> 
+										<a href="#"><%= image_tag("Site/slide-2.jpg", alt: "Slide 2", :class => "2 slide") %></a> 
+										<a href="#"><%= image_tag("Site/slide-3.jpg", alt: "Slide 3", :class => "3 slide") %></a> 
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="row">
+									<div class="col-sm-6 col-md-12">
+										<div class="latest-movie">
+											<a href="#"><img src="dummy/thumb-1.jpg" alt="Movie 1"></a>
+										</div>
+									</div>
+										<div class="latest-movie">
+											<a href="#"><%= image_tag("Site/thumb-2.jpg", alt: "Movie 2", :class => "img_preview") %></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> <!-- .row -->
+						<div class="row">
+							<div class="col-sm-6 col-md-3">
+								<div class="latest-movie">
+									<a href="#"><%= image_tag("rm3213449472.jpg", alt: "Movie 1", :class => "movie_poster") %></a>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="latest-movie">
+									<a href="#"><%= image_tag("rm385270528.jpg", alt: "Movie 2", :class => "movie_poster") %></a>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="latest-movie">
+									<a href="#"><%= image_tag("rm10105600.jpg", alt: "Movie 3", :class => "movie_poster") %></a>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="latest-movie">
+									<a href="#"><%= image_tag("rm2186479360.jpg", alt: "Movie 4", :class => "movie_poster") %></a>
+								</div>
+							</div>
+						</div> <!-- .row -->
+						
+						<div class="row">
+							<div class="col-md-4">
+								<h2 class="section-title">June premiere</h2>
+								<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+								<ul class="movie-schedule">
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+								</ul> <!-- .movie-schedule -->
+							</div>
+							<div class="col-md-4">
+								<h2 class="section-title">July premiere</h2>
+								<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+								<ul class="movie-schedule">
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+								</ul> <!-- .movie-schedule -->
+							</div>
+							<div class="col-md-4">
+								<h2 class="section-title">August premiere</h2>
+								<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+								<ul class="movie-schedule">
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+									<li>
+										<div class="date">16/12</div>
+										<h2 class="entry-title"><a href="#">Perspiciatis unde omnis</a></h2>
+									</li>
+								</ul> <!-- .movie-schedule -->
+							</div>
+						</div>
+					</div>
+				</div> <!-- .container -->
+			</main>

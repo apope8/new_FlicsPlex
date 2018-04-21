@@ -1,12 +1,10 @@
 <% if notice %>
   <aside id="notice"><%= notice %></aside>
 <% end %>
-
-<h1>Your FlicsPlex Catalog</h1>
-
-<ul class="catalog">
+ 
+<div class="latest-movie">
   <% cache @movies do %>
-    <% @movies.each do |movie| %>
+      <% @movies.each do |movie| %>
       <% cache movie do %>
         <li>
           <%= image_tag(movie.image_url) %>
@@ -15,9 +13,8 @@
             <%= sanitize(movie.description) %>
           </p>
           <div class="price">
-            <%= number_to_currency(movie.price) %>
-            <%= button_to 'Add to Cart', line_items_path(movie_id: movie),
-              remote: true %>
+            <td class="price"><%= number_to_currency(movie.price) %></td>
+            <%= button_to 'Add to Cart', line_items_path(movie_id: movie) %>
           </div>
         </li>
       <% end %>

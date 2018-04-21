@@ -9,6 +9,13 @@ end
  # gem 'rails-assets-foundation'
   #gem "rails-assets-jquery"
 #end
+gem 'bootstrap-sass'
+
+gem 'jquery-rails'
+
+gem 'rails-assets-jquery', source: 'https://rails-assets.org'
+
+gem'bourbon'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'

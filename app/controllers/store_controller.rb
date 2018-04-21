@@ -1,5 +1,8 @@
 class StoreController < ApplicationController
- def index
-  @movies = Movie.order(:title)
- end
+  include CurrentCart
+  before_action :set_cart
+  def index
+    @movies = Movie.order(:title)
+    @movies = Movie.all
+  end
 end

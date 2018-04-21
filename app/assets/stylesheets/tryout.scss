@@ -1,19 +1,7 @@
-/**{*/
-/*  --primary-color: #81d4fa;*/
-/*  --light-color: #b6ffff;*/
-/*  --dark-color: #4ba3c7;*/
-/*}*/
-
 * {
     box-sizing: border-box;
 }
-
-
-/*p,ul{*/
-/*	font-size:13px;*/
-
-/*}*/
-
+ 
 .menuH4, .menuH3{
 	color: #4ba3c7; 
 	text-align:center;
@@ -66,30 +54,7 @@
 .bmarg{
    margin-left: 20px;
 }
-/* FOOTER */
-
-footer {
-  	border-top: 0.5px solid  #4ba3c7;
-  	margin-top:20px;
-  	background-color: #81d4fa;  
-  	max-height:100px;
-	padding:0;
-}
-
-footer p {
-	font-size:1em;
-	font-style:italic;
-	color:white;
-	text-align:center;
-}
-
-footer ul {
-	font-style:italic;
-	color:white;
-}
-
-footer a { color:blue}
-
+ 
 /* FEATURES CUSTOMISATION */
 
 .feature {
