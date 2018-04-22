@@ -17,11 +17,11 @@
             </td>
             
             <td class="title"><%= link_to item.title, item %></td>
-            <td><a href="#">Remove From Cart</a></td>
+            <td><a href="/cart/remove/<%= item.id %>">Remove From Cart</a></td>
             <td class="price"><%= number_to_currency(item.price, :unit =>"€") %></td>
             <td class="quantity"><%= quantity %></td>
             <td class="price"><%= number_to_currency(quantity * item.price, :unit =>"€") %></td>
-            
+            <a href="/cart/clear" class="button">Clear Cart</a>
         </tr>
         
         <tr>
@@ -35,9 +35,21 @@
     </table>
     
     <%= link_to 'New Cart', new_cart_path %>
+    
       <% if @cart.empty? %>
     <p>You have not added any items yet</p>
       <% end %>
+      
+      <div class="actions">
+          <%= button_to 'Empty cart', cart,
+                method: :delete,
+                data: { confirm: 'Are you sure?' } %>
+ 
+ 
+          <%= button_to 'Checkout', new_order_path,
+                method: :get,
+                class: "checkout"%>
+          </div>
       </div>
 <br>
 

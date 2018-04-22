@@ -64,6 +64,12 @@ class CartsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  def clearCart
+    # clear cart and remove all items 
+    session[:cart] = nil
+    redirect_to :action => :index
+    
+  end
 
   # ...
   private
@@ -81,4 +87,5 @@ class CartsController < ApplicationController
       logger.error "Attempt to access invalid cart #{params[:id]}"
       redirect_to :action => :index, notice: 'Invalid cart'
     end
+    
 end

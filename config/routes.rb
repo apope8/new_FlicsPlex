@@ -4,12 +4,12 @@ Rails.application.routes.draw do
  get '/contact', to: 'pages#contact' 
  get '/help', to: 'pages#help' 
  get '/home', to: 'pages#home'
-
-
-#get 'orderitems/index'
-#get 'orderitems/show'
-#get 'orderitems/new'
-#get 'orderitems/edit'
+  
+ 
+ #get 'orderitems/index'
+ #get 'orderitems/show'
+ #get 'orderitems/new'
+ #get 'orderitems/edit'
 
  root 'store#index'
  
@@ -29,12 +29,10 @@ Rails.application.routes.draw do
   
   
     devise_for :users do 
-      resources:orders
+      resources :orders
     end 
   
   get '/checkout', to: 'cart#createOrder'
-  get 'cart/index'
- 
   get 'cart/index'
   
   get '/login', to: 'user#login'
@@ -44,6 +42,6 @@ Rails.application.routes.draw do
   get '/cart/:id', to: 'cart#add'
   get '/cart/remove/:id', to: 'cart#remove'
   
-  
+  get '/cart/clear', to: 'cart#clearCart'
   
 end
