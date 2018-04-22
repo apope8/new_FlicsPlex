@@ -1,0 +1,48 @@
+
+			<header class="site-header">
+				<div class="container">
+					<a href="home.html" id="branding">
+						<a href="#"><%= image_tag("logo.png", alt: "Welcome Logo", :class => "welcome Im") %></a>    
+						<div class="logo-copy">
+							<h1 class="site-title">FlicsPlex</h1>
+							<small class="site-description">Movies at the touch of a button</small>
+						</div>
+					</a> <!-- #branding -->
+
+					<div class="main-navigation">
+						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							<li class="menu-item"><%= link_to "Home", home_path %></li>
+							<a class= "menu-item"><%= link_to "Store", root_path %></a>
+                            <li class="menu-item"><%= link_to "Movies", movies_path %></li>
+							<li class="menu-item"><%= link_to "about", about_path %></li>
+							<li class="menu-item"><%= link_to "Contact", contact_path %></li>
+							<li class="menu-item"><%= link_to "Help", help_path %></li>
+							<li class="menu-item"><%= link_to "Cart", carts_path %></li>
+						</ul> <!-- .menu -->
+						<ul class="menu">
+							
+					             <% if user_signed_in? %>
+        
+        						<li><a href="#">Hi <%= current_user.email %></a></li>
+        
+       							 <li><%= link_to 'Sign Out', destroy_user_session_path, :method => :delete %></li>
+        
+       							 <% else %>
+        
+						        <li><%= link_to 'Create Account', new_user_registration_path %></li>
+						        <li><%= link_to 'Sign In', new_user_session_path %></li>
+        
+       							 <% end %>
+							
+								</ul>
+                        
+						<form action="#" class="search-form">
+							<input type="text" placeholder="Search...">
+							<button><i class="fa fa-search"></i></button>
+						</form>
+					</div> <!-- .main-navigation -->
+
+					<div class="mobile-navigation"></div>
+				</div>
+			</header>

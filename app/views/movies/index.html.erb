@@ -4,7 +4,7 @@
 	    <% @movies.each do |movie| %>
 	    
        	<div class="col-3" >	
-        <%= link_to (image_tag movie.image_url, :class=>"colPict"), movie %>
+        <%= link_to (image_tag movie.image_url, :style => "width:40%", :class=>"colPict"), movie %>
           <br>
           <ul class= "bmarg">
             <li class= "bmarg"><h4><%= movie.title %> </h4></li>
@@ -14,11 +14,13 @@
             <li class= "bmarg">$<%= movie.price %></li>
             <li class= "bmarg"> <%= button_to 'Add to Cart', line_items_path(movie_id: movie), :class=>"featureButton",
               remote: true %></li>
-          </ul>
-   
-     </div>
-    <% end %>
-      </div>
+            </ul>
+            
+
+       <br>
+              <%= link_to 'New Movie',  new_movie_path %>
+
   
   </div>
+ <% end %>
 </div>
